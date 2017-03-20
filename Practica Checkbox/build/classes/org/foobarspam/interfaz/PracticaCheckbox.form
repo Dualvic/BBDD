@@ -33,7 +33,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="checkParo" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkUnemployment" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="checkStudent" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -52,9 +52,9 @@
                           <Component id="surnameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="NameField" min="-2" pref="132" max="-2" attributes="0"/>
-                          <Component id="surnameField" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="surnameField" max="32767" attributes="0"/>
+                          <Component id="NameField" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="genreComboBox" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
@@ -67,9 +67,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nameLabel" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="NameField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="nameLabel" max="32767" attributes="0"/>
+                  <Component id="NameField" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -78,7 +78,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="checkParo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="checkUnemployment" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="checkStudent" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="checkWorker" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -98,7 +98,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="NameField">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Introduce tu nombre"/>
+        <Property name="text" type="java.lang.String" value=" Introduce tu nombre"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NameFieldActionPerformed"/>
@@ -106,15 +106,15 @@
     </Component>
     <Component class="javax.swing.JTextField" name="surnameField">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Introduce tus apellidos"/>
+        <Property name="text" type="java.lang.String" value=" Introduce tus apellidos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="checkParo">
+    <Component class="javax.swing.JCheckBox" name="checkUnemployment">
       <Properties>
         <Property name="text" type="java.lang.String" value="En paro"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkParoActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkUnemploymentActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JCheckBox" name="checkStudent">

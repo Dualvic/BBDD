@@ -1,33 +1,53 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.foobarspam.personas;
 
-import java.util.ArrayList;
-
 /**
- *
  * @author Victor
  */
 
 public class Persona {
     
+    /*
+    * Variable declaration
+    */
     String name = "Unknown name";
     String surname = "Unknown surname";
-    //Enum estatus={"Paro","Trabajando","Estudiando"};
     String status = "";
     String genre = "Unkown genre";
-    
-   
       
+    /*
+    * Constructor
+    */
     public Persona (String name, String surname, String status, String genre ) {
         this.name = name;
         this.surname = surname;
         this.status = status;
         this.genre = genre;
 }
+    /*
+    * Getter & setters
+    */
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+    
+    
+    /*
+    * function to convert the person object to string
+    */
+    
     public String toStringPesona() {
         return "la persona de nombre " + name + ", apellido " + surname + ", estado " + status + " y genero " + genre;
     }
