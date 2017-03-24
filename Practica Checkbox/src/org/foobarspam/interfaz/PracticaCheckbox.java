@@ -8,8 +8,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import org.foobarspam.personas.Persona;
+import org.foobarspam.personas.*;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,8 +20,7 @@ public class PracticaCheckbox extends javax.swing.JFrame {
     
     // Variable declaration (Arraylist persons, simulating a DB)
     
-    static ArrayList<Persona> personas = new ArrayList<>();
- 
+
  
     /**
      * Creates the form "Checkbox practice"
@@ -200,10 +198,10 @@ public class PracticaCheckbox extends javax.swing.JFrame {
     try(FileWriter fw = new FileWriter("src/org/foobarspam/savedfiles/savedfiles.txt", true);
 					BufferedWriter bw = new BufferedWriter(fw);
 					PrintWriter out = new PrintWriter(bw)) {
-					for (int i = 0; i<personas.size(); i++) {
-						out.println(personas.get(i).getName()+ " " + personas.get(i).getSurname() + " " +
-									personas.get(i).getStatus()+ " " +
-									personas.get(i).getGenre());
+					for (int i = 0; i<PoolPersonas.personas.size(); i++) {
+						out.println(PoolPersonas.personas.get(i).getName()+ " " + PoolPersonas.personas.get(i).getSurname() + " " +
+									PoolPersonas.personas.get(i).getStatus()+ " " +
+									PoolPersonas.personas.get(i).getGenre());
 					}
 					} catch (IOException error) {
 						System.out.println(error);
@@ -239,7 +237,8 @@ public class PracticaCheckbox extends javax.swing.JFrame {
             // create person and saved on the arraylist persona 
             
             Persona p = new Persona(name, surname, status, genre);
-            personas.add(p);
+            PoolPersonas.addPerson(p);
+            
             
             // Correct input message
             
